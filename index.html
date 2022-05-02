@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="author" content="Caeleb Gensler">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Game Store</title> 
+    <link rel="stylesheet" type="text/css" href="./css/master.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans">
+  </head>
+  <body>
+    <div id="divider">
+      <header id="header-box">
+        <img src="./img/logo.png" alt="Game Store Logo" id="header-img">
+        <h1>Digital Game Store</h1>
+      </header>
+      <main id="main-box">
+        <div class="item-box">
+          <img src="./img/hoi4.jpg" alt="" class="game-image-vertical">
+          <h3 class="game-title" id="title-0"></h3>
+          <button class="add-to-cart" id="button-0" onclick="addToCart(this.id)">Add to Cart</button>
+          <p class="game-price" id="price-0"></p>
+        </div>
+        <div class="item-box">
+          <img src="./img/rimworld.jpg" alt="" class="game-image-wide">
+          <h3 class="game-title" id="title-1"></h3>
+          <button class="add-to-cart" id="button-1" onclick="addToCart(this.id)">Add to Cart</button>
+          <p class="game-price" id="price-1"></p>
+        </div>
+        <div class="item-box">
+          <img src="./img/stellaris.jpg" alt="" class="game-image-vertical">
+          <h3 class="game-title" id="title-2"></h3>
+          <button class="add-to-cart" id="button-2" onclick="addToCart(this.id)">Add to Cart</button>
+          <p class="game-price" id="price-2"></p>
+        </div>
+        <div class="item-box">
+          <img src="./img/terraria.jpg" alt="" class="game-image-wide">
+          <h3 class="game-title" id="title-3"></h3>
+          <button class="add-to-cart" id="button-3" onclick="addToCart(this.id)">Add to Cart</button>
+          <p class="game-price" id="price-3"></p>
+        </div>
+        <div class="item-box">
+          <img src="./img/squad.jpg" alt="" class="game-image-wide">
+          <h3 class="game-title" id="title-4"></h3>
+          <button class="add-to-cart" id="button-4" onclick="addToCart(this.id)">Add to Cart</button>
+          <p class="game-price" id="price-4"></p>
+        </div>
+        <div class="item-box">
+          <img src="./img/civ5.jpg" alt="" class="game-image-vertical">
+          <h3 class="game-title" id="title-5"></h3>
+          <button class="add-to-cart" id="button-5" onclick="addToCart(this.id)">Add to Cart</button>
+          <p class="game-price" id="price-5"></p>
+        </div>
+      </main>
+    </div>
+    <div id="cart-outer">
+      <img src="./img/cart.png" id="cart-logo">
+      <div id="cart"></div>
+    </div>
+    <script src="./js/scripts.js"></script>
+  </body>
+</html>

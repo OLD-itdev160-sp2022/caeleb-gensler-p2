@@ -1,0 +1,88 @@
+body {
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  display: flex;
+  background-color: #373d49;
+}
+
+#divider {
+  max-width: 85%;
+}
+
+#header-box {
+  display: flex;
+  justify-content: space-around;
+}
+
+h1 {
+  font-size: 43px;
+  font-family: 'Copperplate', 'Arial', sans-serif;
+}
+
+.item-box {
+  border: 1px solid black;
+  flex-basis: 33%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  background-color: #4c566a;
+}
+
+#cart-outer {
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#header-img {
+  height: 15%;
+  width: 15%;
+}
+
+#cart-logo {
+  height: 50px;
+  width: 50px;
+}
+
+.game-image-vertical {
+  height: 60%;
+  width: 40%;
+  padding-top: 5px;
+}
+
+.game-image-wide {
+  height: 50%;
+  width: 70%;
+  padding-top: 35px;
+}
+
+#main-box {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+#cart {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cart-object-outer {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid black;
+  margin: 5px auto;
+  padding-bottom: 5px;
+}
+
+.cart-object-title {
+  font-size: large;
+  font-weight: bold;
+}
+
+.cart-object-price {
+  margin: 8px;
+}

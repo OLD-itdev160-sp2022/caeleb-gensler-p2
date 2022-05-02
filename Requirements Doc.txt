@@ -1,0 +1,22 @@
+Project Description: Create a webpage for a fictitious digital game store. 
+
+Feature list: 
+1. Display a variety of different video games with prices
+2. Be able to add any game to cart
+3. View the games in a cart
+4. Delete the games from the cart
+
+Technical tasks:
+1. Use an array of mock data to fill the information on the game:
+  a. The array will hold the: Game Title, Game Price, and a boolean to determine its status in the cart.
+2. Each box with the game information will have a button that calls a function addToCart(buttonID)
+  a. The function passes through the ID of which button was pressed to call on the information in the array of the same index
+  b. The information will be used to send an Object to another function that will then create the html elements of the game in the cart
+  c.The function will also make use of the boolean to prevent the game from being added to the cart more than once
+3. After calling the addToCart() function, a function called addCartElement(CartItem) will create the elements to display the game in the cart
+  a. Using the DOM, 4 elements will be created, 2 text elements for the Title and Price of the game, a button to remove the item from the cart, and a div to wrap the elements into one object
+  b. Each element will be dynamically created and given attributes to be able to be targeted for deletion if wanted.
+  c. The button will use an Event Listener to wait for a click event which will then call the deleteCartElement
+4. To delete the desired game from the cart, the button will call the deleteCartElement function
+  a. Using the Event Listener, the number from the id of the button pressed will return the index of the game object
+  b. The div holding all of the cart elements will be targeted, and using the remove() function, will be removed from the page
